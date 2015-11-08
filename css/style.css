@@ -42,6 +42,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+		text-align: justify;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -484,11 +485,33 @@
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
+			height: 28em;
 		}
 
 			.image.fit img {
 				width: 100%;
 			}
+
+	div.4u {
+	    width:100%;
+	    display:block;
+	    position:relative;
+	    text-align: center!important;
+	}
+
+	.texthover .overlay {
+	    position:absolute;
+	    top:45%;
+	    width:0;
+	    width:100%;
+	    height:50%;
+	    padding:10px;
+	    background-color:rgba(0, 0, 0, 0.3);
+	    display:none;
+	}
+	.texthover:hover .overlay {
+	    display:block;
+	}	
 
 /* List */
 
@@ -860,7 +883,7 @@
 /* Header */
 
 	body.landing #header {
-		background-color: transparent;
+		background-color: rgba(111, 108, 108, 0.22);
 		left: 0;
 		position: absolute;
 		top: 0;
@@ -888,7 +911,8 @@
 		}
 
 			#header h1 a {
-				font-size: 1.25em;
+				font-size: 2.25em;
+				font-weight: bolder;
 			}
 
 		#header nav {
